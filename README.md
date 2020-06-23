@@ -3,6 +3,8 @@ A imerção GameDev da Alura tem como objetivo a pratica do JavaScript apartir d
 
 #  :ghost: Hipsta e a convenção bruxa
 
+![Hipsta](https://raw.githubusercontent.com/Wilgnne/imersao-gamedev/master/docs/game.PNG)
+
 Hipsta é um bruxa novata e esta indo para sua primeira convenção bruxa, que este ano será sediada na floresta meridional de Wakalub.
 Mas sua travessia não será fácil, Hipsta terá de enfrentar os mais fofos monstros que moram na floresta e que desejam impedir sua passagem.
 
