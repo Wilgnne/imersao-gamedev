@@ -20,11 +20,12 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   hipstaY = height - 140;
 
-  cenario = new Cenario(imagemCenario, 50);
+  cenario = new Cenario(imagemCenario, 1);
 }
 
 function draw() {
   cenario.exibe();
+
   image(
     hipstaSpriteSheet,
     hipstaX,
@@ -36,4 +37,6 @@ function draw() {
     spriteSheetW,
     spriteSheetH
   );
+
+  cenario.move();
 }
