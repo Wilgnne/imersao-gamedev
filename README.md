@@ -54,7 +54,7 @@ draw() {
  
  ## **:books: REFERÊNCIAS**
 
-- [P5.js]([https://p5js.org/](https://p5js.org/))
+- [P5.js](https://p5js.org/)
 - [Imersão GameDev Alura - Aula 1](https://www.alura.com.br/imersao-gamedev-javascript/aula01-game-personagem-animacao?utm_campaign=imersao_js_gamedev_aula_01&utm_medium=email&utm_source=RD+Station)
  
  ## **:page_with_curl: LICENÇA**
