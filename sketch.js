@@ -9,6 +9,8 @@ const hipstaH = 135;
 let hipstaX = 0;
 let hipstaY = 0;
 
+let cenario;
+
 function preload() {
   imagemCenario = loadImage('imagens/cenario/floresta.png');
   hipstaSpriteSheet = loadImage('imagens/personagem/correndo.png');
@@ -17,19 +19,21 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   hipstaY = height - 140;
+
+  cenario = new Cenario(imagemCenario, 50);
 }
 
 function draw() {
-  background(imagemCenario);
+  cenario.exibe();
   image(
-    hipstaSpriteSheet, 
-    hipstaX, 
+    hipstaSpriteSheet,
+    hipstaX,
     hipstaY,
-    hipstaW, 
-    hipstaH, 
-    0, 
-    0, 
-    spriteSheetW, 
+    hipstaW,
+    hipstaH,
+    0,
+    0,
+    spriteSheetW,
     spriteSheetH
   );
 }
