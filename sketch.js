@@ -1,5 +1,6 @@
 let imagemCenario;
 let hipstaSpriteSheet;
+let music;
 
 const spriteSheetW = 220;
 const spriteSheetH = 270;
@@ -14,6 +15,7 @@ let cenario;
 function preload() {
   imagemCenario = loadImage('imagens/cenario/floresta.png');
   hipstaSpriteSheet = loadImage('imagens/personagem/correndo.png');
+  music = loadSound('sons/trilha_jogo.mp3');
 }
 
 function setup() {
@@ -21,6 +23,7 @@ function setup() {
   hipstaY = height - 140;
 
   cenario = new Cenario(imagemCenario, 1);
+  music.loop();
 }
 
 function draw() {
