@@ -2,15 +2,8 @@ let imagemCenario;
 let hipstaSpriteSheet;
 let music;
 
-const spriteSheetW = 220;
-const spriteSheetH = 270;
-const hipstaW = 110;
-const hipstaH = 135;
-
-let hipstaX = 0;
-let hipstaY = 0;
-
 let cenario;
+let hipsta;
 
 function preload() {
   imagemCenario = loadImage('imagens/cenario/floresta.png');
@@ -20,26 +13,31 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  frameRate(40);
   hipstaY = height - 140;
 
   cenario = new Cenario(imagemCenario, 1);
+  hipsta = new Character(
+    hipstaSpriteSheet,
+    0,
+    height - 140,
+    110,
+    135,
+    {
+      spriteSheetW: 220,
+      spriteSheetH: 270,
+      horizontal: 4,
+      vertical: 4
+    }
+  );
+
   music.loop();
 }
 
 function draw() {
   cenario.exibe();
 
-  image(
-    hipstaSpriteSheet,
-    hipstaX,
-    hipstaY,
-    hipstaW,
-    hipstaH,
-    0,
-    0,
-    spriteSheetW,
-    spriteSheetH
-  );
+  hipsta.draw();
 
   cenario.move();
 }
